@@ -72,7 +72,6 @@ h6 {
 body {
   height: 100vh;
   color: var(--main-text-color);
-  max-width: 1280px;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -161,7 +160,7 @@ header {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 640px) {
   .faq {
     width: 95%;
     padding-top: 1.5rem;
