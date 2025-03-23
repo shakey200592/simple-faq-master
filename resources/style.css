@@ -1,0 +1,193 @@
+/* Reset Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Root Variables */
+:root {
+  --main-text-color: #030616;
+  --main-url-color: #4e80ee;
+  --section-bg-color: rgba(210, 213, 218, 0.2);
+}
+
+/* Global Styles */
+body {
+  height: 100vh;
+  color: var(--main-text-color);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Typography */
+h1 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+p li {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* Lists */
+ol,
+ul {
+  padding: 0;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  list-style-position: inside; /* Aligns list markers with text */
+}
+
+li {
+  text-align: left; /* Ensures text alignment */
+  padding-left: 0.5rem; /* Adds spacing between marker and text */
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--main-url-color);
+}
+
+/* Horizontal Rule */
+hr {
+  margin: 2rem 0;
+}
+
+/* Header */
+header {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  background-color: var(--section-bg-color);
+}
+
+/* FAQ Section */
+.faq {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* Author Info */
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 680px) {
+  .faq {
+    width: 95%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p,
+  li {
+    font-size: 1.1rem;
+  }
+
+  .author-info {
+    font-size: 12px;
+  }
+}
