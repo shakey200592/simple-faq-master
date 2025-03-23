@@ -74,22 +74,20 @@ body {
   color: var(--main-text-color);
   max-width: 1280px;
   margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /* Typography */
 h1 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
-  font-style: normal;
   font-size: 2.25rem;
 }
 
 h2 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
-  font-style: normal;
+
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -103,10 +101,7 @@ li {
 }
 
 p li {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
   font-size: 1rem;
 }
 
@@ -116,7 +111,6 @@ ul {
   padding: 0;
   margin-bottom: 1rem;
   margin-left: 1.5rem;
-  list-style-position: inside; /* Aligns list markers with text */
 }
 
 li {
@@ -167,7 +161,7 @@ header {
 }
 
 /* Media Queries */
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1024px) {
   .faq {
     width: 95%;
     padding-top: 1.5rem;
